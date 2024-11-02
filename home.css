@@ -1,0 +1,476 @@
+
+/* font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sans:wght@500&display=swap');
+    /* ivyStle not available, only on adobe fonts */
+
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box; 
+        font-family: 'Open Sans', sans-serif;
+    }
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+/* blank space */
+.blank-space {
+    width: 100%;
+    height: 5vh;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+/* ---------- background-header-image -------- */
+header {
+    height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.886)), 
+                      url("./images/netflix-wallpaper\ \(1920x1080\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-blend-mode: darken;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    /* logo */
+    .logo {
+        width: 182.5px;
+        position: absolute;
+        cursor: pointer;
+        top: -5.5px;
+        left: 78px;
+    }
+    
+/* --------------- sign-in button --------------- */
+    .sign-in a {
+        position: absolute;
+        padding: 5px;
+        top: -18px;
+        right: 170px;
+        text-decoration: none;
+    }
+
+.sign-in input[type="button"] {
+    width: 77px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;  
+    font-size: 13.5px;
+    font-weight: bold;
+    background: #ff0000e7;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    margin-top: 40px;
+    margin-left: 10px;
+    padding: 7px 20px;
+}
+
+.sign-in input[type="button"]:hover {
+    background-color: #ff0000d0;
+}
+
+/* --------------- Page Title--------------- */
+.showcase {
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin: 250px auto 0px auto; 
+    /* transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 40%; */
+}
+
+.showcase h2 {
+    line-height: 70px ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.showcase h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.showcase p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.875rem;
+    text-align: center;
+}
+
+/* --------------- email sign_up --------------- */
+.email-sign-up {
+    min-width: 70%; 
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 7%;
+    transform: translate(10%, 50%);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+input[type="email"] {
+    height: 54px;
+    width: 44vh;
+    max-width: 500px;
+    /* display: flex; */
+    border-radius: 5px; 
+    margin: 0 10px 0 30vh;
+    padding: 0 0 0 10px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: rgba(144, 136, 136, 0.572);
+    color: rgba(10, 3, 3, 0.695);
+}
+
+.email-sign-up input[type="submit"] {
+    width: 190px;
+    height: 54px;
+    border-radius: 5px;  
+    /* display: flex;
+    font-size: 18px; */
+    justify-content: center;
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 9%;
+}
+
+/* --------------- banner --------------- */
+.banner {
+    width: 95%; 
+    height: 21vh;
+    margin: 0px auto 10px auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.281)), 
+                      url(./images/cinema-banner.jpg);
+    /* background-image: url(../media/wallpapers/abstract-\ purple\ n\ red.jpg); */
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: bottom;
+    background-size: 100%;
+    border-radius: 4px;
+    position: relative;
+    top: 22%;
+}
+
+.banner-row-1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    /* translate & width somehow kept it put in centre when shrinking screen */
+}
+
+.banner-icon {
+    position: relative;;
+}
+
+.banner-icon img {
+    margin: 0 50px 0 0;
+}
+
+.special-offer {
+    float: right;
+    position: absolute;
+    transform: translate(100%, 20px);
+    display: none;
+}
+
+.banner h4 {
+    line-height: 30px ;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #110404;
+ }
+    
+    .banner p {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        color:#fff;
+    }
+
+/* --------------- features--------------- */
+.features {
+    padding: 30px 13%;
+    font-size: 22px;
+    margin: 20px auto 0 auto;
+    border-bottom: 1vh solid rgba(53, 52, 52, 0.924);
+    height: 60vh;
+}
+
+.features-row-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    margin-bottom: 30px;
+}
+
+.img-colmn-1 {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-colmn-1 img {
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.text-colmn-1 {
+    flex-basis: 50%;
+    margin-bottom: 7vh;
+}
+
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+    /* transform: translate(0,50%); */
+    /* line-height: 3vh; */
+}
+
+.features p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* --------------- FAQ Section --------------- */
+.faq {
+    min-height: 90vh;
+    max-height: 120vh;
+    
+    min-width: 100%; 
+    max-width: 600px;
+    font-size: 18px;
+    margin: 40px auto auto auto; 
+    border-bottom: 1vh solid rgba(53, 52, 52, 0.924);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* list container */
+.accordion {
+    padding: 10px 12%;
+    margin: 20px auto;
+    width: 100%;
+    /* max-width: 750px; */
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+/* FAQ questions */
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* expand */
+.accordion li label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* This was difficult to understand */
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s; 
+}
+
+/* adjacent sibling combinator */
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq h4 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    height: 5px;
+}
+
+.faq-bottom {
+    padding: 10px; 
+    margin: 20px 0 10vh 0px;
+}
+
+
+ /* ------------------------ footer styling ------------------------ */
+ .footer {
+    width: 100%;
+    height: 58vh;
+    border: 2px solid black;
+    background-color:rgba(0,0,0,.75);
+    text-decoration: none;
+}
+
+.footer-container {
+            max-width: 100%;
+            margin: 15px auto 20px auto;
+            padding: 5px 15%;
+            transform: translate(-3.5%, 0%);
+        }
+
+        /* contact no. */
+    #telephone-no ul li a {
+    color: rgba(255,255,255,0.7);
+    margin: 0 0 35px 5px; 
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+        /* row container */
+    .footer-row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+        position: relative;
+        right: 5px;
+    }
+
+        .footer-col {
+            width: 25%;
+            color: rgba(255,255,255,0.7);
+            min-width: 250px;
+        }
+
+/* contact information */
+.footer-col ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+/* each indivisual link */
+.footer-col ul li a {
+    text-decoration: underline;
+    color: rgba(255,255,255,0.7);
+    margin: 0 0 10px 5px; 
+    text-decoration: underline;
+    font-size: 13.5px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+
+/* #language ul li a {
+    color: rgba(255,255,255,0.7);
+    margin: 0 0 4vh 0; 
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+} */
+
+.drop-down {
+    min-width: 120px;
+    min-height: 10px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 0 0 2vh 0; 
+    text-align: center;
+  }
+
+  .drop-down:hover {
+    background-color: purple;
+  }
+
+/*   
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d216ad5d;
+    min-width: 120px;
+    min-height: 10px;
+    transform: translate(-15%, -80%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    z-index: 0;
+  } */
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #language p {
+    font-size: 15px;
+  }
