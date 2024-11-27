@@ -1,8 +1,8 @@
-# Netflix-Streaming-Site
+# Netflix Streaming Site
 
 # project preview 
 https://crashingwharph.github.io/Netflix-Streaming-Site/ 
 https://crashingwharph.github.io/Netflix-Streaming-Site/login.html
 
-# info 
+# Project info 
 html and css 
